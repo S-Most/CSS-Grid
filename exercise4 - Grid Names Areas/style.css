@@ -1,0 +1,46 @@
+*{
+    margin:0;
+}
+
+.navBar {
+    grid-area: nb;
+    background-color :red;
+}
+
+.sideBar {
+    grid-area: sd;
+    background-color: blue;
+}
+
+.mainContent {
+    grid-area: main;
+    background-color: green;
+}
+
+.footer {
+    grid-area: ft;
+    background-color :red;
+}
+
+/* Hierboven geleverd in Jarvis? */
+
+.grid {
+    display: grid;
+    min-height: 100vh;
+    gap: 1rem;
+    grid-template:
+      "nb" 5rem
+      "sd " 10rem
+      "main" 1fr
+      "ft" 5rem / 1fr;
+}
+
+@media (min-width: 600px){
+    .grid {
+        grid-template:
+          "nb nb nb" 3rem
+          "sd main main" 1fr
+          "sd main main" 1fr
+          "ft ft ft" 4rem;
+    }
+}

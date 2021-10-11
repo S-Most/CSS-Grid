@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+.board{
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.child:nth-child(odd){
+    background: black;
+}

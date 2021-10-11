@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    background: lightgoldenrodyellow;
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px 1fr 80px;
+    height: 100vh;
+}
+
+.navBar, .footer{
+    grid-column: 1 / -1;
+    background :red;
+}
+
+.sideBar{
+    background: blue;
+}
+
+.mainContent{
+    grid-column: 2 / -1;
+    background: green;
+}
